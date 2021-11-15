@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Cabin', sans-serif;
+  box-sizing: border-box; }
+
+body {
+  background: lightblue;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; }
+  body .mainWebsite {
+    margin: 20px 0 0 0;
+    color: #111;
+    text-decoration: none; }
+  body .container {
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    background: #fff;
+    display: grid;
+    margin: 50px;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1); }
+    @media (max-width: 1000px) {
+      body .container {
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr); } }
+    body .container .left_side {
+      position: relative;
+      background: #003147;
+      padding: 40px; }
+      body .container .left_side .profileText {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2); }
+        body .container .left_side .profileText .imgBx {
+          position: relative;
+          width: 200px;
+          height: 200px;
+          border-radius: 50%;
+          overflow: hidden; }
+          body .container .left_side .profileText .imgBx img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; }
+        body .container .left_side .profileText h2 {
+          color: #fff;
+          font-size: 1.5em;
+          margin-top: 20px;
+          text-transform: uppercase;
+          text-align: center;
+          font-weight: 600;
+          line-height: 1.4em; }
+          body .container .left_side .profileText h2 span {
+            font-size: 16px;
+            font-weight: 300; }
+      body .container .left_side .contactInfo {
+        padding-top: 40px; }
+        body .container .left_side .contactInfo .title {
+          color: #fff;
+          text-transform: uppercase;
+          font-weight: 600;
+          letter-spacing: 1px;
+          margin-bottom: 20px; }
+        body .container .left_side .contactInfo ul {
+          position: relative; }
+          body .container .left_side .contactInfo ul li {
+            position: relative;
+            list-style: none;
+            margin: 10px 0;
+            cursor: pointer;
+            line-height: 25px; }
+            body .container .left_side .contactInfo ul li .icon {
+              display: inline-block;
+              width: 30px;
+              font-size: 18px;
+              color: #03a9f4; }
+            body .container .left_side .contactInfo ul li span {
+              color: #d7f3ff;
+              font-weight: 300; }
+      body .container .left_side .contactInfo.education li {
+        margin-bottom: 15px; }
+      body .container .left_side .contactInfo.education h5 {
+        color: #03a9f4;
+        padding-bottom: 5px;
+        font-weight: 500; }
+      body .container .left_side .contactInfo.education h4 {
+        color: #fff;
+        font-weight: 300; }
+        body .container .left_side .contactInfo.education h4:nth-child(2) {
+          font-weight: 600;
+          color: #fff; }
+      body .container .left_side .contactInfo.language .percent {
+        position: relative;
+        width: 100%;
+        height: 6px;
+        background: #081921;
+        display: block;
+        margin-top: 5px; }
+        body .container .left_side .contactInfo.language .percent div {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 100%;
+          background: #03a9f4; }
+    body .container .right_side {
+      position: relative;
+      background: #fff;
+      padding: 40px; }
+      body .container .right_side .about {
+        margin-bottom: 50px; }
+        body .container .right_side .about:last-child {
+          margin-bottom: 0;
+          margin-top: 100px; }
+        body .container .right_side .about .title2 {
+          color: #003147;
+          text-transform: uppercase;
+          letter-spacing: 1px;
+          margin-bottom: 10px; }
+        body .container .right_side .about p {
+          color: #333;
+          line-height: 25px; }
+        body .container .right_side .about .box {
+          display: flex;
+          flex-direction: row;
+          margin: 20px 0; }
+          @media (max-width: 700px) {
+            body .container .right_side .about .box {
+              flex-direction: column; } }
+          body .container .right_side .about .box .year_company {
+            min-width: 150px; }
+            @media (max-width: 700px) {
+              body .container .right_side .about .box .year_company {
+                margin-bottom: 5px; } }
+            body .container .right_side .about .box .year_company h5 {
+              text-transform: uppercase;
+              color: #848c90;
+              font-weight: 600;
+              line-height: 22px; }
+          body .container .right_side .about .box .text h4 {
+            text-transform: uppercase;
+            color: #2a7da2;
+            font-size: 16px;
+            line-height: 22px; }
+      body .container .right_side .skills .box {
+        position: relative;
+        display: grid;
+        grid-template-columns: 150px 1fr;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        line-height: 28px; }
+        body .container .right_side .skills .box h4 {
+          text-transform: uppercase;
+          color: #848c99;
+          font-weight: 500; }
+        body .container .right_side .skills .box .percent {
+          position: relative;
+          width: 100%;
+          height: 10px;
+          background: #f0f0f0; }
+          body .container .right_side .skills .box .percent div {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: #03a9f4; }
+      body .container .right_side .interest ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); }
+        @media (max-width: 1000px) {
+          body .container .right_side .interest ul {
+            grid-template-columns: repeat(2, 1fr); } }
+        body .container .right_side .interest ul li {
+          list-style: none;
+          color: #333;
+          font-weight: 500;
+          margin: 10px 0 0 0; }
+          body .container .right_side .interest ul li .fa {
+            color: #03a9f4;
+            font-size: 18px;
+            width: 20px; }
